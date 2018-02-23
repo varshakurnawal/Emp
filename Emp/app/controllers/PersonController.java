@@ -117,7 +117,7 @@ public class PersonController extends Controller {
        System.out.println("person inside add person()::::"+person);
        System.out.println("Result : "+personRepository.verify(person).toString());
        return personRepository.verify(person).thenApplyAsync(p -> {
-    	   System.out.println("p----------------------------------="+p);
+    	  
        	if(p.equals(false))
        	{
        		
