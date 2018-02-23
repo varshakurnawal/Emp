@@ -133,7 +133,7 @@ public class PersonController extends Controller {
     
     public CompletionStage<Result> addPerson() {
     	
-    	System.out.println("inside Add Person-------------------------------------");
+    	
         PersonBean person = formFactory.form(PersonBean.class).bindFromRequest().get();
         System.out.println("person inside add person()::::"+person.email);
         System.out.println("Inside ");
